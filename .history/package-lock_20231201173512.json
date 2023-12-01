@@ -9,7 +9,6 @@
       "version": "0.1.0",
       "dependencies": {
         "@emotion/react": "^11.10.5",
-        "@emotion/styled": "^11.10.5",
         "@headlessui/react": "^1.7.12",
         "@heroicons/react": "^2.0.16",
         "@material-tailwind/react": "^1.2.5",
@@ -3413,8 +3412,8 @@
       },
       "peerDependencies": {
         "@types/react": "^16.8.6 || ^17.0.0",
-        "react": "^17.0.0 || ^18.0.0",
-        "react-dom": "^17.0.0 || ^18.0.0"
+        "react": "^16.8.0 || ^17.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0"
       },
       "peerDependenciesMeta": {
         "@types/react": {

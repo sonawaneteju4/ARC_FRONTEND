@@ -1,0 +1,110 @@
+.color1{
+ background-color: aqua;
+}
+.color2{
+ background-color: fuchsia;
+}
+.color3{
+ background-color: violet;
+}
+.color4{
+ background-color: gold;
+}
+.color5{
+ background-color: hotpink;
+}
+.color6{
+ background-color: tomato;
+}
+.color7{
+ background-color: black;
+}
+
+.card{
+  position:relative;
+  width: 333px;;
+  height: 333px;;
+  color:#2e2d31;
+  background: hsl(0, 0%, 98%);
+  overflow: hidden;
+  border-radius:20px;
+}
+.temporary_text{
+font-weight: bold;
+font-size: 24px;
+padding: 6px 12px;
+color: #f8f8f8;
+}
+.card_title{
+  font-weight: bold;
+}
+.card_content{
+  position:absolute;
+  left:0;
+  bottom:0;
+  /* edit the width to fit card */
+  width:100%;
+  padding:18px;
+  background:#000000;
+  border-top-left-radius: 20px;
+
+  /* edit here to change the height of the content box */
+
+  -webkit-transform: translateY(150px);
+
+      -ms-transform: translateY(150px);
+
+          transform: translateY(150px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+}
+.card_content::before{
+  content:'';
+  position:absolute;
+  top:-47px;
+  right:-45px;
+  width:100px;
+  height: 100px;
+  -webkit-transform: rotate(-175deg);
+      -ms-transform: rotate(-175deg);
+          transform: rotate(-175deg);
+  border-radius: 70%;
+  -webkit-box-shadow:inset 48px 48px #000000;
+          box-shadow:inset 48px 48px #000000;
+}
+.card_title{
+color:#ffffff;
+line-height:15px;
+}
+.card_subtitle{
+  display: block;
+  font-size:10px;
+  margin-bottom:10px;
+}
+.card:hover .card_content{
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.card:hover .card_description{
+  opacity:1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
